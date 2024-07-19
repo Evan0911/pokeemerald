@@ -1162,7 +1162,6 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                 textPrinter->printerTemplate.currentX += (gCurGlyph.width + textPrinter->printerTemplate.letterSpacing);
             else
                 textPrinter->printerTemplate.currentX += gCurGlyph.width;
-        }
     }
         return RENDER_PRINT;
     case RENDER_STATE_WAIT:
