@@ -190,59 +190,7 @@ static const struct SpriteTemplate sSpriteTemplate_HeartIcon =
 // code
 bool8 CheckForTrainersWantingBattle(void)
 {
-    u8 i;
-
-    gNoOfApproachingTrainers = 0;
-    gApproachingTrainerId = 0;
-
-    for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
-    {
-        u8 numTrainers;
-
-        if (!gObjectEvents[i].active)
-            continue;
-        if (gObjectEvents[i].trainerType != TRAINER_TYPE_NORMAL && gObjectEvents[i].trainerType != TRAINER_TYPE_BURIED)
-            continue;
-
-        numTrainers = CheckTrainer(i);
-        if (numTrainers == 2)
-            break;
-
-        if (numTrainers == 0)
-            continue;
-
-        if (gNoOfApproachingTrainers > 1)
-            break;
-        if (GetMonsStateToDoubles_2() != PLAYER_HAS_TWO_USABLE_MONS) // one trainer found and cant have a double battle
-            break;
-    }
-
-    if (gNoOfApproachingTrainers == 1)
-    {
-        ResetTrainerOpponentIds();
-        ConfigureAndSetUpOneTrainerBattle(gApproachingTrainers[gNoOfApproachingTrainers - 1].objectEventId,
-                                          gApproachingTrainers[gNoOfApproachingTrainers - 1].trainerScriptPtr);
-        gTrainerApproachedPlayer = TRUE;
-        return TRUE;
-    }
-    else if (gNoOfApproachingTrainers == 2)
-    {
-        ResetTrainerOpponentIds();
-        for (i = 0; i < gNoOfApproachingTrainers; i++, gApproachingTrainerId++)
-        {
-            ConfigureTwoTrainersBattle(gApproachingTrainers[i].objectEventId,
-                                       gApproachingTrainers[i].trainerScriptPtr);
-        }
-        SetUpTwoTrainersBattle();
-        gApproachingTrainerId = 0;
-        gTrainerApproachedPlayer = TRUE;
-        return TRUE;
-    }
-    else
-    {
-        gTrainerApproachedPlayer = FALSE;
-        return FALSE;
-    }
+    return FALSE;
 }
 
 static u8 CheckTrainer(u8 objectEventId)
