@@ -3522,6 +3522,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_DRAGON_CLAW] =
@@ -3533,6 +3534,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_WATER_PULSE] =
@@ -3544,6 +3546,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_CALM_MIND] =
@@ -3555,6 +3558,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_ROAR] =
@@ -3566,6 +3570,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_TOXIC] =
@@ -3577,6 +3582,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_HAIL] =
@@ -3588,6 +3594,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_BULK_UP] =
@@ -3599,6 +3606,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_BULLET_SEED] =
@@ -3610,6 +3618,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_HIDDEN_POWER] =
@@ -3621,6 +3630,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_SUNNY_DAY] =
@@ -3632,6 +3642,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_TAUNT] =
@@ -3643,6 +3654,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_ICE_BEAM] =
@@ -3654,6 +3666,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_BLIZZARD] =
@@ -3665,6 +3678,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_HYPER_BEAM] =
@@ -3676,6 +3690,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_LIGHT_SCREEN] =
@@ -3687,6 +3702,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_PROTECT] =
@@ -3698,6 +3714,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_RAIN_DANCE] =
@@ -3709,6 +3726,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_GIGA_DRAIN] =
@@ -3720,6 +3738,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_SAFEGUARD] =
@@ -3731,6 +3750,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_FRUSTRATION] =
@@ -3742,6 +3762,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_SOLAR_BEAM] =
@@ -3753,6 +3774,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_IRON_TAIL] =
@@ -3764,6 +3786,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_THUNDERBOLT] =
@@ -3775,6 +3798,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_THUNDER] =
@@ -3786,6 +3810,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_EARTHQUAKE] =
@@ -3797,6 +3822,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_RETURN] =
@@ -3808,6 +3834,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_DIG] =
@@ -3819,6 +3846,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_PSYCHIC] =
@@ -3830,6 +3858,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_SHADOW_BALL] =
@@ -3841,6 +3870,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_BRICK_BREAK] =
@@ -3852,6 +3882,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_DOUBLE_TEAM] =
@@ -3863,6 +3894,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_REFLECT] =
@@ -3874,6 +3906,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_SHOCK_WAVE] =
@@ -3885,6 +3918,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_FLAMETHROWER] =
@@ -3896,6 +3930,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_SLUDGE_BOMB] =
@@ -3907,6 +3942,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_SANDSTORM] =
@@ -3918,6 +3954,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_FIRE_BLAST] =
@@ -3929,6 +3966,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_ROCK_TOMB] =
@@ -3940,6 +3978,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_AERIAL_ACE] =
@@ -3951,6 +3990,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_TORMENT] =
@@ -3962,6 +4002,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_FACADE] =
@@ -3973,6 +4014,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_SECRET_POWER] =
@@ -3984,6 +4026,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_REST] =
@@ -3995,6 +4038,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_ATTRACT] =
@@ -4006,6 +4050,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_THIEF] =
@@ -4017,6 +4062,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_STEEL_WING] =
@@ -4028,6 +4074,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_SKILL_SWAP] =
@@ -4039,6 +4086,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_SNATCH] =
@@ -4050,6 +4098,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_TM_OVERHEAT] =
@@ -4061,6 +4110,7 @@ const struct Item gItems[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
+        .importance = 1,
     },
 
     [ITEM_HM_CUT] =
