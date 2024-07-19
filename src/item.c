@@ -2,13 +2,13 @@
 #include "item.h"
 #include "berry.h"
 #include "string_util.h"
-#include "text.h"
-#include "event_data.h"
-#include "malloc.h"
-#include "secret_base.h"
+#include "text.h" //pala
+#include "event_data.h" //pala
+#include "malloc.h" // pala
+#include "secret_base.h" //pala
 #include "item_menu.h"
 #include "strings.h"
-#include "load_save.h"
+#include "load_save.h" //pala
 #include "item_use.h"
 #include "battle_pyramid.h"
 #include "battle_pyramid_bag.h"
