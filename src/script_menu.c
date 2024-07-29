@@ -427,68 +427,55 @@ static void CreateLilycoveSSTidalMultichoice(void)
         }
     }
 
-    if (CheckBagHasItem(ITEM_EON_TICKET, 1) == TRUE && FlagGet(FLAG_ENABLE_SHIP_SOUTHERN_ISLAND) == TRUE)
+    if (gSpecialVar_0x8004 == 0)
     {
-        if (gSpecialVar_0x8004 == 0)
-        {
-            sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_SOUTHERN_ISLAND;
-            selectionCount++;
-        }
-
-        if (gSpecialVar_0x8004 == 1 && FlagGet(FLAG_SHOWN_EON_TICKET) == FALSE)
-        {
-            sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_SOUTHERN_ISLAND;
-            selectionCount++;
-            FlagSet(FLAG_SHOWN_EON_TICKET);
-        }
+        sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_SOUTHERN_ISLAND;
+        selectionCount++;
     }
 
-    if (CheckBagHasItem(ITEM_MYSTIC_TICKET, 1) == TRUE && FlagGet(FLAG_ENABLE_SHIP_NAVEL_ROCK) == TRUE)
+    if (gSpecialVar_0x8004 == 1 && FlagGet(FLAG_SHOWN_EON_TICKET) == FALSE)
     {
-        if (gSpecialVar_0x8004 == 0)
-        {
-            sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_NAVEL_ROCK;
-            selectionCount++;
-        }
-
-        if (gSpecialVar_0x8004 == 1 && FlagGet(FLAG_SHOWN_MYSTIC_TICKET) == FALSE)
-        {
-            sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_NAVEL_ROCK;
-            selectionCount++;
-            FlagSet(FLAG_SHOWN_MYSTIC_TICKET);
-        }
+        sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_SOUTHERN_ISLAND;
+        selectionCount++;
+        FlagSet(FLAG_SHOWN_EON_TICKET);
+    }
+    if (gSpecialVar_0x8004 == 0)
+    {
+        sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_NAVEL_ROCK;
+        selectionCount++;
     }
 
-    if (CheckBagHasItem(ITEM_AURORA_TICKET, 1) == TRUE && FlagGet(FLAG_ENABLE_SHIP_BIRTH_ISLAND) == TRUE)
+    if (gSpecialVar_0x8004 == 1 && FlagGet(FLAG_SHOWN_MYSTIC_TICKET) == FALSE)
     {
-        if (gSpecialVar_0x8004 == 0)
-        {
-            sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_BIRTH_ISLAND;
-            selectionCount++;
-        }
-
-        if (gSpecialVar_0x8004 == 1 && FlagGet(FLAG_SHOWN_AURORA_TICKET) == FALSE)
-        {
-            sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_BIRTH_ISLAND;
-            selectionCount++;
-            FlagSet(FLAG_SHOWN_AURORA_TICKET);
-        }
+        sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_NAVEL_ROCK;
+        selectionCount++;
+        FlagSet(FLAG_SHOWN_MYSTIC_TICKET);
     }
 
-    if (CheckBagHasItem(ITEM_OLD_SEA_MAP, 1) == TRUE && FlagGet(FLAG_ENABLE_SHIP_FARAWAY_ISLAND) == TRUE)
+    if (gSpecialVar_0x8004 == 0)
     {
-        if (gSpecialVar_0x8004 == 0)
-        {
-            sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_FARAWAY_ISLAND;
-            selectionCount++;
-        }
+        sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_BIRTH_ISLAND;
+        selectionCount++;
+    }
 
-        if (gSpecialVar_0x8004 == 1 && FlagGet(FLAG_SHOWN_OLD_SEA_MAP) == FALSE)
-        {
-            sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_FARAWAY_ISLAND;
-            selectionCount++;
-            FlagSet(FLAG_SHOWN_OLD_SEA_MAP);
-        }
+    if (gSpecialVar_0x8004 == 1 && FlagGet(FLAG_SHOWN_AURORA_TICKET) == FALSE)
+    {
+        sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_BIRTH_ISLAND;
+        selectionCount++;
+        FlagSet(FLAG_SHOWN_AURORA_TICKET);
+    }
+
+    if (gSpecialVar_0x8004 == 0)
+    {
+        sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_FARAWAY_ISLAND;
+        selectionCount++;
+    }
+
+    if (gSpecialVar_0x8004 == 1 && FlagGet(FLAG_SHOWN_OLD_SEA_MAP) == FALSE)
+    {
+        sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_FARAWAY_ISLAND;
+        selectionCount++;
+        FlagSet(FLAG_SHOWN_OLD_SEA_MAP);
     }
 
     sLilycoveSSTidalSelections[selectionCount] = SSTIDAL_SELECTION_EXIT;
