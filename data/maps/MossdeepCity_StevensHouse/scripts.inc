@@ -79,6 +79,7 @@ MossdeepCity_StevensHouse_EventScript_BeldumPokeball::
 	goto MossdeepCity_StevensHouse_EventScript_GiveBeldum
 	end
 
+
 MossdeepCity_StevensHouse_EventScript_LeaveBeldum::
 	msgbox MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas, MSGBOX_DEFAULT
 	releaseall
@@ -116,7 +117,6 @@ MossdeepCity_StevensHouse_EventScript_BeldumTransferredToPC::
 
 MossdeepCity_StevensHouse_EventScript_ReceivedBeldumFanfare::
 	bufferspeciesname STR_VAR_2, SPECIES_BELDUM
-	removeobject LOCALID_BELDUM_BALL
 	playfanfare MUS_OBTAIN_ITEM
 	message MossdeepCity_StevensHouse_Text_ObtainedBeldum
 	waitmessage
@@ -125,8 +125,61 @@ MossdeepCity_StevensHouse_EventScript_ReceivedBeldumFanfare::
 	return
 
 MossdeepCity_StevensHouse_EventScript_ReceivedBeldum::
-	setflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL
-	setflag FLAG_RECEIVED_BELDUM
+	releaseall
+	end
+
+MossdeepCity_StevensHouse_EventScript_JirachiPokeball::
+	lockall
+	msgbox MossdeepCity_StevensHouse_Text_TakeBallContainingJirachi, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MossdeepCity_StevensHouse_EventScript_LeaveJirachi
+	goto MossdeepCity_StevensHouse_EventScript_GiveJirachi
+	end
+
+MossdeepCity_StevensHouse_EventScript_LeaveJirachi::
+	msgbox MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas, MSGBOX_DEFAULT
+	releaseall
+	end
+
+MossdeepCity_StevensHouse_EventScript_GiveJirachi::
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_JIRACHI
+	givemon SPECIES_JIRACHI, 20
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, MossdeepCity_StevensHouse_EventScript_SendJirachiParty
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, MossdeepCity_StevensHouse_EventScript_SendJirachiPC
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+MossdeepCity_StevensHouse_EventScript_SendJirachiParty::
+	call MossdeepCity_StevensHouse_EventScript_ReceivedJirachiFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MossdeepCity_StevensHouse_EventScript_ReceivedJirachi
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto MossdeepCity_StevensHouse_EventScript_ReceivedJirachi
+	end
+
+MossdeepCity_StevensHouse_EventScript_SendJirachiPC::
+	call MossdeepCity_StevensHouse_EventScript_ReceivedJirachiFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MossdeepCity_StevensHouse_EventScript_JirachiTransferredToPC
+	call Common_EventScript_NameReceivedBoxMon
+	goto MossdeepCity_StevensHouse_EventScript_JirachiTransferredToPC
+	end
+
+MossdeepCity_StevensHouse_EventScript_JirachiTransferredToPC::
+	call Common_EventScript_TransferredToPC
+	goto MossdeepCity_StevensHouse_EventScript_ReceivedJirachi
+	end
+
+MossdeepCity_StevensHouse_EventScript_ReceivedJirachiFanfare::
+	bufferspeciesname STR_VAR_2, SPECIES_JIRACHI
+	playfanfare MUS_OBTAIN_ITEM
+	message MossdeepCity_StevensHouse_Text_ObtainedJirachi
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_JIRACHI
+	return
+
+MossdeepCity_StevensHouse_EventScript_ReceivedJirachi::
 	releaseall
 	end
 
@@ -185,6 +238,15 @@ MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
 
 MossdeepCity_StevensHouse_Text_ObtainedBeldum:
 	.string "{PLAYER} obtained a BELDUM.$"
+
+MossdeepCity_StevensHouse_Text_TakeBallContainingJirachi:
+	.string "{PLAYER} checked the POKé BALL.\p"
+	.string "It contained the POKéMON\n"
+	.string "JIRACHI.\p"
+	.string "Take the POKé BALL?$"
+
+MossdeepCity_StevensHouse_Text_ObtainedJirachi:
+	.string "{PLAYER} obtained a JIRACHI.$"
 
 @ Unused
 MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon:
